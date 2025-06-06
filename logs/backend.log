@@ -1,0 +1,23 @@
+INFO:     Will watch for changes in these directories: ['/Users/zhm/Desktop/code_demo/ai_study/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [63342] using StatReload
+INFO:     Started server process [63348]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:51009 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51031 - "GET /api/conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51032 - "GET /api/conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51056 - "GET /api/conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51058 - "GET /api/conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51072 - "POST /api/chat/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51083 - "GET /api/conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51088 - "DELETE /api/conversations/23f71dde-c6a1-49cb-a1e9-a0083a809b22 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51091 - "DELETE /api/conversations/428798d2-03e9-49ba-adb7-6cbafb83e8c5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51094 - "DELETE /api/conversations/0aa8574b-c261-4819-979d-e2e02a2632a4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51111 - "DELETE /api/conversations/9a308487-bf90-4ffa-b51b-014934a8f705 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51114 - "DELETE /api/conversations/eee86bb7-7f0c-4014-9bf6-5de7c9463645 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51119 - "DELETE /api/conversations/1ca851af-b9f1-44de-82d3-c386ea0e84ce HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51122 - "DELETE /api/conversations/70e18e19-4415-462b-a60b-8a31f9c7cce1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51127 - "DELETE /api/conversations/88a52660-f0d5-45f8-a2da-cf83952735e7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51130 - "DELETE /api/conversations/16d580c7-8c28-4f70-a978-ad7093882fb6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51133 - "DELETE /api/conversations/ff798d5a-c397-44fd-9661-629178fb30ed HTTP/1.1" 200 OK
