@@ -43,12 +43,12 @@ export const ChatInput: React.FC<ChatInputProps> = ({
   }, [message]);
 
   return (
-    <div className="border-t border-gray-200/50 bg-white/80 backdrop-blur-xl p-3 sm:p-4 lg:p-6 safe-area-inset-bottom">
+    <div className="border-t border-gray-200/50 bg-white/90 backdrop-blur-xl p-2 sm:p-3 lg:p-4 safe-area-inset-bottom">
       <form onSubmit={handleSubmit} className="max-w-4xl mx-auto">
         <div className="relative">
           {/* 搜索选项 */}
-          <div className="flex items-center mb-3 sm:mb-4">
-            <label className="flex items-center space-x-2 sm:space-x-3 text-sm text-gray-700 cursor-pointer group">
+          <div className="flex items-center mb-2 sm:mb-3">
+            <label className="flex items-center space-x-2 sm:space-x-3 text-xs sm:text-sm text-gray-700 cursor-pointer group">
               <input
                 type="checkbox"
                 checked={useSearch}
@@ -56,7 +56,7 @@ export const ChatInput: React.FC<ChatInputProps> = ({
                 className="rounded border-gray-300 text-blue-600 focus:ring-blue-500 focus:ring-2 transition-all"
               />
               <Search size={16} className={`sm:w-[18px] sm:h-[18px] transition-colors ${useSearch ? 'text-blue-600' : 'text-gray-500'}`} />
-              <span className={`transition-colors text-xs sm:text-sm ${useSearch ? 'text-blue-600 font-medium' : 'text-gray-600'}`}>
+              <span className={`transition-colors ${useSearch ? 'text-blue-600 font-medium' : 'text-gray-600'}`}>
                 启用网络搜索
               </span>
             </label>
@@ -73,10 +73,10 @@ export const ChatInput: React.FC<ChatInputProps> = ({
                 placeholder={isStreaming ? "AI正在回复中..." : "输入你的问题..."}
                 disabled={disabled || isStreaming}
                 className={`w-full resize-none rounded-xl sm:rounded-2xl border border-gray-300
-                  px-3 sm:px-4 py-2.5 sm:py-3 pr-10 sm:pr-12 text-sm sm:text-base
+                  px-3 sm:px-4 py-2 sm:py-3 pr-10 sm:pr-12 text-sm sm:text-base
                   focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20
                   disabled:bg-gray-50 disabled:text-gray-500 transition-all duration-200
-                  min-h-[44px] sm:min-h-[52px] max-h-24 sm:max-h-32 ${isStreaming ? 'cursor-not-allowed' : ''}`}
+                  min-h-[40px] sm:min-h-[48px] max-h-20 sm:max-h-32 ${isStreaming ? 'cursor-not-allowed' : ''}`}
                 rows={1}
               />
 
@@ -120,7 +120,7 @@ export const ChatInput: React.FC<ChatInputProps> = ({
           </div>
 
           {/* 提示文本 */}
-          <div className="mt-2 text-xs text-gray-500 text-center">
+          <div className="mt-1 sm:mt-2 text-xs text-gray-500 text-center">
             <span className="hidden sm:inline">按 Enter 发送，Shift + Enter 换行</span>
             <span className="sm:hidden">Enter发送，Shift+Enter换行</span>
           </div>

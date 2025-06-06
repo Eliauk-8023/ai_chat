@@ -1,0 +1,18 @@
+INFO:     Will watch for changes in these directories: ['/Users/zhm/Desktop/code_demo/ai_study/ai_chat/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [69907] using WatchFiles
+INFO:     Started server process [69939]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:53938 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53948 - "GET /api/conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53952 - "GET /api/conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53959 - "DELETE /api/conversations/f70fe37f-a846-4db9-bddd-992f6168e88b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53963 - "DELETE /api/conversations/9e855d03-ad2c-4bda-93ff-c0cf9f46c476 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53980 - "GET /api/conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53982 - "GET /api/conversations HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [69939]
+INFO:     Stopping reloader process [69907]

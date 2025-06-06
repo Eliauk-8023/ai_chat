@@ -102,7 +102,7 @@ function App() {
           )}
         </header>
 
-        {/* 聊天区域 - 自适应高度 */}
+        {/* 聊天区域 - 关键：确保正确的高度计算 */}
         <div className="flex-1 flex flex-col min-h-0 relative">
           {messages.length === 0 ? (
             <div className="flex-1 overflow-y-auto">
@@ -111,9 +111,11 @@ function App() {
           ) : (
             <div
               id="chat-container"
-              className="flex-1 overflow-y-auto p-3 sm:p-4 space-y-4 sm:space-y-6 pb-safe chat-container-mobile md:max-h-[calc(100vh-140px)]"
+              className="flex-1 overflow-y-auto p-3 sm:p-4 space-y-4 sm:space-y-6"
               style={{
-                minHeight: '200px' // 确保最小高度
+                height: 'calc(100vh - 140px)', // 精确计算：100vh - 头部(60px) - 输入区域(80px)
+                maxHeight: 'calc(100vh - 140px)',
+                minHeight: '200px'
               }}
             >
               {isLoading ? (

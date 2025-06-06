@@ -94,31 +94,31 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
       {/* 侧边栏 */}
       <div className={`
-        fixed lg:relative inset-y-0 left-0 z-50 w-72 sm:w-80 bg-white/90 backdrop-blur-xl border-r border-gray-200/50
+        fixed lg:relative inset-y-0 left-0 z-50 w-80 bg-white/90 backdrop-blur-xl border-r border-gray-200/50
         transform transition-transform duration-300 ease-in-out shadow-xl
         ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
       `}>
         <div className="flex flex-col h-full">
           {/* 头部 */}
-          <div className="flex items-center justify-between p-3 sm:p-4 border-b border-gray-200">
-            <h1 className="text-lg sm:text-xl font-bold gradient-text">AI助手</h1>
+          <div className="flex items-center justify-between p-4 border-b border-gray-200">
+            <h1 className="text-xl font-bold gradient-text">AI助手</h1>
             <button
               onClick={onToggle}
               className="lg:hidden p-2 text-gray-500 hover:text-gray-700 transition-colors"
             >
-              <X size={18} className="sm:w-5 sm:h-5" />
+              <X size={20} />
             </button>
           </div>
 
           {/* 新建对话按钮 */}
-          <div className="p-3 sm:p-4">
+          <div className="p-4">
             <button
               onClick={onNewConversation}
-              className="w-full flex items-center justify-center space-x-2 px-3 sm:px-4 py-2.5 sm:py-3
+              className="w-full flex items-center justify-center space-x-2 px-4 py-3 
                 bg-blue-500 hover:bg-blue-600 text-white rounded-xl transition-all duration-200
-                hover:scale-105 active:scale-95 shadow-lg text-sm sm:text-base"
+                hover:scale-105 active:scale-95 shadow-lg"
             >
-              <Plus size={18} className="sm:w-5 sm:h-5" />
+              <Plus size={20} />
               <span>新建对话</span>
             </button>
           </div>
