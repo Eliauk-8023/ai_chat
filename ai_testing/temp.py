@@ -5,7 +5,6 @@
 # @File    : temp.py
 # @Project : ai_testing
 
-# testing repository
 
 import os
 
